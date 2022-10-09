@@ -1,22 +1,30 @@
 {
-  "name": "codespace cHello demo",
-  "image": "ubuntu:20.04",
-  // Configure tool-specific properties.
-  "customizations": {
-    // Configure properties specific to VS Code.
-    "vscode": {
-      // Add the IDs of extensions you want installed when the container is created.
-      "extensions": [
-		"ms-azuretools.vscode-docker",
-		"dbaeumer.vscode-eslint",
-		"rogalmic.bash-debug",
-		"mads-hartmann.bash-ide-vscode",
-		"streetsidesoftware.code-spell-checker",
-		"mutantdino.resourcemonitor",
-		"bierner.github-markdown-preview",
-		"EditorConfig.EditorConfig",
-		"chrisdias.vscode-opennewinstance"
-      ]
-    }
-  }
-}
+
+   "name": "codespace cHello demo",
+   "image": "ubuntu:20.04",
+
+ 	// Configure tool-specific properties.
+ 	"customizations": {
+ 		// Configure properties specific to VS Code.
+ 		"vscode": {
+ 			// Add the IDs of extensions you want installed when the container is created.
+ 			"extensions": [
+ 				"ms-azuretools.vscode-docker",
+ 				"dbaeumer.vscode-eslint",
+ 				"rogalmic.bash-debug",
+ 				"mads-hartmann.bash-ide-vscode",
+ 				"streetsidesoftware.code-spell-checker",
+ 				"mutantdino.resourcemonitor",
+ 				"bierner.github-markdown-preview",
+ 				"EditorConfig.EditorConfig",
+ 				"chrisdias.vscode-opennewinstance"
+ 			]
+ 		}
+ 	},
+ 	"remoteUser": "node",
+ 	"features": {
+ 		"docker-in-docker": "latest",
+ 		"github-cli": "latest"
+ 	},
+ 	"overrideCommand": false
+ }
